@@ -19,6 +19,14 @@ description: 读取全局发布平台并召回对应审稿说明，审核当前�
 
 多章正文集合只选每章一个实际版本，并分别记录路径和 hash。需要统计材料时调用 `scripts/inspect_manuscript.py`，工具只提供文件事实与本地计数，不替代平台门槛判断或原创判定。
 
+```bash
+python3 <skill-dir>/scripts/inspect_manuscript.py \
+  --text <chapter-1.md> --text <chapter-2.md> \
+  --outline <outline.md> --application <application-file>
+```
+
+辅助材料参数可省略；未提供不等于目标通道不需要，按审稿范围另行判断。二进制申请表可登记路径及 hash，文本解码失败不等于表格损坏，需对应文件工具检查内容。`--minimum-body-chars` 只用于已核实的目标通道参考门槛。
+
 ## 2. 读取全局平台并召回说明
 
 读取工程根目录 PROJECT.md 的 publishing_platform 与 platform_selection，不读取其他小说 Skill 来推断平台，也不以人物、题材猜平台。
