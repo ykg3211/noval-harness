@@ -1,0 +1,4 @@
+interface:
+  display_name: "小说章节审稿"
+  short_description: "按全局发布平台召回审稿说明，检查章节质量、连续性和平台要求"
+  default_prompt: "使用 $novel-review，读取工程发布平台并审核刚完成的章节，输出可定位的修改建议。"

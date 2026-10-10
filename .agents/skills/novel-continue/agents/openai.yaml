@@ -1,0 +1,4 @@
+interface:
+  display_name: "小说章节续写"
+  short_description: "自动读取大纲与前序章节，探讨后续剧情，通过人物推演完成续写"
+  default_prompt: "使用 $novel-continue，先读取大纲和前序章节，和我探讨下一章剧情。"

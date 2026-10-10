@@ -1,0 +1,4 @@
+interface:
+  display_name: "小说框架初始化"
+  short_description: "通过对话共创小说框架，初始化人物、故事线与长期记忆档案"
+  default_prompt: "使用 $novel-bootstrap 与我一起探索小说设计，并在当前工程初始化小说框架和人物记忆。"

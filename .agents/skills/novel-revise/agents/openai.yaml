@@ -1,0 +1,4 @@
+interface:
+  display_name: "小说设定修订"
+  short_description: "共创调整主线与人物性格，检查剧情影响并同步本地 Markdown 档案"
+  default_prompt: "使用 $novel-revise，与我讨论并修改小说主线或人物性格，同步相关 Markdown 档案。"
